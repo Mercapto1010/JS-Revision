@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+</head>
+<body>
+     <h1>Pratteek Pathak</h1>
+     <button id="stop">Stop</button>
+</body>
+<script>
+    // const greet = function(){
+    //   console.log("Ram Ram Bhai Sarayaney");
+    // }
+    // setTimeout(greet,2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "YoYo Bantai Rapper"
+    }
+   const changeMe =  setTimeout(changeText,2000);
+
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("Stopped");
+   })
+</script>
+</html>
